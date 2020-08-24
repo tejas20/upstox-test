@@ -1,0 +1,85 @@
+.formGroup {
+   margin: 1rem 0;
+}
+.searchInput {
+   width: 40%;
+}
+.selectInput{
+    margin-left: auto;
+    width: 30%;
+ }
+
+.formControl {
+    display: block;
+    width: 100%;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    background-clip: padding-box;
+    border: 1px solid transparent;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    box-sizing : border-box;
+}
+
+.formInline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.selectOptions {
+    padding: 0.5rem 1rem;
+}
+/* enable absolute positioning */
+.innerAddon { 
+    position: relative; 
+}
+
+/* style icon */
+.innerAddon .fa {
+  position: absolute;
+  padding: 1.25rem;
+  pointer-events: none;
+}
+
+/* align icon */
+.leftAddon .fa  { left:  0rem;}
+.rightAddon .fa { right: 0rem;}
+
+select {
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+} 
+
+
+@media (max-width: 320px) {
+    .formInline {
+        display: block;
+    }
+    .searchInput {
+        width: 100%;
+     }
+     .selectInput{
+         margin-left: 0;
+         width: 100%;
+    }
+  }
+  @media (max-width: 576px) {
+    .formInline {
+        display: block;
+    }
+    .searchInput {
+        width: 100%;
+     }
+     .selectInput{
+         margin-left: 0;
+         width: 100%;
+    }
+  }
